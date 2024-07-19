@@ -72,6 +72,8 @@ pip install xclone
 
 - [BCH869 demo](https://github.com/Rongtingting/xclone-data/blob/main/examples/BCH869_XClone_tutorials.ipynb)
 
+- [colab](https://colab.research.google.com/github/Rongtingting/xclone-data/blob/main/demo/GX109_demo_notebooks/GX109_scRNA_RDR_fromxcltk.ipynb)
+
 
 
 ### shell script
