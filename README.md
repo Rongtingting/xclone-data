@@ -11,4 +11,4 @@ Additional information and description will be available soon.
 
 ## XClone Workshop July 2024
 
-[CPOS_Workshop](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/CPOS_Workshop.md)
+[XClone Workshop together with CPOS, July 19 2024](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/CPOS_Workshop.md)
