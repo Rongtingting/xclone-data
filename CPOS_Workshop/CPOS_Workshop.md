@@ -34,7 +34,7 @@
 
 - xcltk: https://github.com/hxj5/xcltk
 
-- slides: [xcltk-workshop](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/xcltk%20-%20workshop.pdf)
+- slides: [xcltk-workshop](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/xcltk%20-%20workshop%20-%20XJ.pdf)
 
 The submission of each pbs script would be simply: `qsub <pbs_script>`
 e.g., `qsub pbs_baf`
