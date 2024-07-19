@@ -12,9 +12,6 @@
 ![File architecture](./workshop_structure.png)
 
 
-- xcltk preprocessing output 
-![File architecture](./xcltk_output.png)
-
 
 
 ## Program rundown
@@ -46,6 +43,13 @@ e.g., `qsub pbs_baf`
 
 [pbs_baf](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/pbs_baf)
 
+
+- xcltk preprocessing output
+
+![File architecture](./xcltk_output.png)
+
+
+
 ## XClone
 
 - github: https://github.com/single-cell-genetics/XClone
@@ -57,6 +61,7 @@ e.g., `qsub pbs_baf`
 ### demo
 
 These demo can be used in [Google Colab](https://colab.google/) directly.
+
 
 ```python
 pip install xclone
