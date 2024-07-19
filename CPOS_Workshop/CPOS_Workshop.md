@@ -16,7 +16,7 @@
 
 ## Program rundown
 
-- Overview of XClone and CNA analysis in single-cell and spatial RNA-seq.   **Prof. Huang**  `(2:15-2:30 pm)`
+- Overview of XClone and CNA analysis in single-cell and spatial RNA-seq.   **Prof. Yuanhua Huang**  `(2:15-2:30 pm)`
 
 - One click for InferCNV-like results (~3min) via `XClone RDR Module`  **Rongting Huang** `(2:30-3:00 pm)`
 
