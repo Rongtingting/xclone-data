@@ -11,70 +11,22 @@
 
 ![File architecture](./workshop_structure.png)
 
-├── data
 
-│   ├── 10x_600cell
+![File architecture](./update_file_structure.png)
 
-│   │   └── bam
-
-│   └── xcltk_files
-
-├── pbs_xclone
-
-├── result
-
-│   └── 10x_600cell
-
-│       ├── baf
-
-│       │   └── pbs_baf
-
-│       └── rdr
-
-│           └── pbs_rdr
-
-├── result_finished
-
-│   └── 10x_600cell
-
-│       ├── baf
-
-│       │   ├── 10x_600cell.genotype.vcf.gz
-
-│       │   ├── 10x_600cell.phased.vcf.gz
-
-│       │   ├── baf_fc
-
-│       │   ├── pbs_baf
-
-│       │   ├── pileup
-
-│       │   └── scripts
-
-│       └── rdr
-
-│           ├── barcodes.tsv
-
-│           ├── features.tsv
-
-│           ├── matrix.mtx
-
-│           └── pbs_rdr
-
-└── xclone_script.py
 
 
 ## Program rundown
 
-- Overview of XClone and CNA analysis in single-cell and spatial RNA-seq.   **Prof. Huang**  (2:15-2:30 pm)
+- Overview of XClone and CNA analysis in single-cell and spatial RNA-seq.   **Prof. Huang**  `(2:15-2:30 pm)`
 
-- One click for InferCNV-like results (~3min) via `XClone RDR Module`  **Rongting Huang** (2:30-3:00 pm)
+- One click for InferCNV-like results (~3min) via `XClone RDR Module`  **Rongting Huang** `(2:30-3:00 pm)`
 
-- Preprocessing toolkit `xcltk` to generate (allele-specific) counts from BAM file  **Xianjie Huang** (3:00-4:00 pm)
+- Preprocessing toolkit `xcltk` to generate (allele-specific) counts from BAM file  **Xianjie Huang** `(3:00-4:00 pm)`
     - Detailed introduction of the 3-steps in `xcltk` (3:00-3:15 pm)
     - Demo in shell (3:00-4:00 pm)
 
-- XClone pipeline to run RDR module, BAF module and Combine module **Rongting Huang** (4:00-5:00 pm)
+- XClone pipeline to run RDR module, BAF module and Combine module **Rongting Huang** `(4:00-5:00 pm)`
     - Detailed introduction of the 3 modules in `XClone` (4:00-4:15 pm)
     - BCH869 Demo in Colab (4:15-4:30 pm)
     - GX109 Demo in shell (4:30-5:00 pm)
