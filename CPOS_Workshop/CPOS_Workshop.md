@@ -12,7 +12,8 @@
 ![File architecture](./workshop_structure.png)
 
 
-![File architecture](./update_file_structure.png)
+- xcltk preprocessing output 
+![File architecture](./xcltk_output.png)
 
 
 
@@ -36,8 +37,14 @@
 
 - xcltk: https://github.com/hxj5/xcltk
 
+- slides: [xcltk-workshop](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/xcltk%20-%20workshop.pdf)
+
 The submission of each pbs script would be simply: `qsub <pbs_script>`
 e.g., `qsub pbs_baf`
+
+[pbs_rdr](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/pbs_rdr)
+
+[pbs_baf](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/pbs_baf)
 
 ## XClone
 
@@ -65,3 +72,7 @@ pip install xclone
 ### shell script
 
 The submission of the pbs script would be simply: `qsub pbs_xclone`
+
+[pbs_xclone](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/pbs_xclone)
+
+[xclone_script](https://github.com/Rongtingting/xclone-data/blob/main/CPOS_Workshop/xclone_script.py)
