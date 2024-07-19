@@ -74,6 +74,8 @@ pip install xclone
 
 - [colab](https://colab.research.google.com/github/Rongtingting/xclone-data/blob/main/demo/GX109_demo_notebooks/GX109_scRNA_RDR_fromxcltk.ipynb)
 
+- [bch869 colab](https://colab.research.google.com/github/Rongtingting/xclone-data/blob/main/examples/BCH869_XClone_tutorials.ipynb)
+
 
 
 ### shell script
