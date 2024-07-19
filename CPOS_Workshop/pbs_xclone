@@ -1,0 +1,29 @@
+#!/bin/bash
+# Author:Rongting Huang
+# Date:2024-06-22
+#PBS -N XClone
+#PBS -q workshop
+#PBS -l nodes=1:ppn=10
+#PBS -l mem=32g
+#PBS -l walltime=24:00:00
+# mail is sent to you when the job starts and when it terminates or aborts
+#PBS -m bea
+# specify your email address
+#PBS -j oe
+#PBS -o ~/XClone_workshop/xclone_combine.log
+
+ml XClone/0.3.8
+ml python3/3.9.2
+
+dataset_name="10x_600cell"
+rdr_data_dir=~/XClone_workshop/result_finished/10x_600cell/rdr/
+baf_data_dir=~/XClone_workshop/result_finished/10x_600cell/baf/baf_fc/
+out_dir=$PBS_O_WORKDIR
+cell_anno_file=~/XClone_workshop/data/10x_600cell/bam/cell_anno.tsv
+anno_file_sep="\t"
+barcodes_key="cell"
+cell_anno_key="cell_type"
+ref_celltype="immune cells_clone1"
+cd $PBS_O_WORKDIR
+python xclone_script.py $dataset_name $rdr_data_dir $baf_data_dir $out_dir $cell_anno_file $anno_file_sep $barcodes_key $cell_anno_key "$ref_celltype"
+exit

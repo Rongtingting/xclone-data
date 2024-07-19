@@ -1,0 +1,42 @@
+#!/bin/bash
+#PBS -N baf
+#PBS -q workshop
+#PBS -l nodes=1:ppn=10,mem=32g,walltime=24:00:00
+#PBS -m abe
+#PBS -o baf.out
+#PBS -e baf.err
+
+ml xcltk/0.3.1
+
+# run `set` after `source` & `conda activate` as the source file has an unbound variable
+#-e instructs a shell to exit if a command fails
+#-u treats unset or undefined variables as an error when substituting
+#-x prints out command arguments during execution
+set -eux  
+
+work_dir=`cd $(dirname $0) && pwd`
+if [ -n "$PBS_O_WORKDIR" ]; then
+  work_dir=$PBS_O_WORKDIR
+fi
+
+
+# PUT YOUR CODE HERE
+data_dir=~/XClone_workshop/data
+xcltk baf  \
+    --label        10x_600cell    \
+    --sam          $data_dir/10x_600cell/bam/600cell.bam       \
+    --barcode      $data_dir/10x_600cell/bam/barcodes.tsv   \
+    --snpvcf       $data_dir/xcltk_files/genome1K.phase3.SNP_AF5e2.chr1toX.hg38.vcf.gz  \
+    --region       $data_dir/xcltk_files/annotate_genes_hg38_update_20230126.txt        \
+    --outdir       $work_dir          \
+    --gmap         $data_dir/xcltk_files/Eagle_v2.4.1/tables/genetic_map_hg38_withX.txt.gz  \
+    --eagle        $data_dir/xcltk_files/Eagle_v2.4.1/eagle      \
+    --paneldir     $data_dir/xcltk_files/1000G_hg38              \
+    --ncores       20
+
+
+set +ux
+#+u (unload this) treats unset or undefined variables as an error when substituting
+#+x (unload this) prints out command arguments during execution
+
+echo All Done!

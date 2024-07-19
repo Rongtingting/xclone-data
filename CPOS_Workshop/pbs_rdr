@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N rdr
+#PBS -q workshop
+#PBS -l nodes=1:ppn=5,mem=32g,walltime=24:00:00
+#PBS -m abe
+#PBS -o rdr.out
+#PBS -e rdr.err
+
+ml xcltk/0.3.1
+
+# run `set` after `source` & `conda activate` as the source file has an unbound variable
+set -eux  
+
+work_dir=`cd $(dirname $0) && pwd`
+if [ -n "$PBS_O_WORKDIR" ]; then
+  work_dir=$PBS_O_WORKDIR
+fi
+
+
+# PUT YOUR CODE HERE
+data_dir=~/XClone_workshop/data
+xcltk basefc     \
+    --sam          $data_dir/10x_600cell/bam/600cell.bam       \
+    --barcode      $data_dir/10x_600cell/bam/barcodes.tsv   \
+    --region       $data_dir/xcltk_files/annotate_genes_hg38_update_20230126.txt   \
+    --outdir       $work_dir  \
+    --ncores       5
+
+set +ux
+
+echo All Done!
