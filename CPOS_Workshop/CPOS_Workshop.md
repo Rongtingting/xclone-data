@@ -92,6 +92,4 @@ The submission of the pbs script would be simply: `qsub pbs_xclone`
 [Getting started](https://xclone-cnv.readthedocs.io/en/latest/getting_started.html)
 
 
-## Zoom link
 
-[Workshop](https://hku.zoom.us/my/rongting)
